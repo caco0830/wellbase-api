@@ -12,9 +12,9 @@ const AuthService = {
         return bcrypt.compare(password, hash);
     },
     createJwt(subject, payload){
-        return jwt.sign(payload, condig.JWT_SECRET, {
+        return jwt.sign(payload, config.JWT_SECRET, {
             subject,
-            algorith: 'HS256',
+            algorithm: 'HS256',
         });
     },
     verifyJwt(token){

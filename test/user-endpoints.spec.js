@@ -3,7 +3,7 @@ const app = require('../app');
 const bcrypt = require('bcryptjs');
 const helpers = require('./test-helpers');
 
-describe.only('User Endpoints', function(){
+describe('User Endpoints', function(){
     let db;
     
     const {testUsers} = helpers.makeUserFixtures();
